@@ -1,4 +1,4 @@
-# Simulations for Robust Subgroup Identification
+# Simulations for Robust Subgroup Identification Using Independent Vector Analysis
 
 This package contains the code for reproducing the simulations of our paper:
 
