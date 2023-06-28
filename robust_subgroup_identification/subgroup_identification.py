@@ -42,7 +42,6 @@ import numpy as np
 from sklearn.cluster import AgglomerativeClustering
 from scipy.cluster.hierarchy import dendrogram, linkage
 import matplotlib.pyplot as plt
-import tikzplotlib
 
 
 def detect_number_blocks_using_bootstrap(sources, B, P_fa):
@@ -140,13 +139,9 @@ def detect_number_blocks_using_gershgorin(sources):
     return n_subgroups
 
 
-def cluster_datasets(sources, n_clusters, B, P_fa, labels=None, plot=True, filename=None):
+def cluster_datasets(sources, n_clusters, B, P_fa, labels=None, plot=True):
     # cluster tasks based on non-common SCVs
     # S: np.ndarray of dimensions n_components x n_observations x n_datasets
-
-    # if filename is given, plot is set to true so the figure will be saved
-    if filename is not None:
-        plot = True
 
     n_c, T, K = sources.shape
     n_subblocks = np.zeros(n_c, dtype=int)
@@ -194,8 +189,6 @@ def cluster_datasets(sources, n_clusters, B, P_fa, labels=None, plot=True, filen
             plt.tight_layout()
             plt.xlabel('Dataset label')
             plt.ylabel('Distance')
-            if filename is not None:
-                tikzplotlib.save(filename, axis_width='9cm', axis_height='6cm')
             plt.show()
 
         # use hierarchical/agglomerative clustering to calculate labels. 'ward' is default anyway
