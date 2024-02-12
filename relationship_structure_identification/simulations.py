@@ -1,6 +1,6 @@
-#     Copyright (c) <2023> <University of Paderborn>
+#     Copyright (c) <2024> <University of Paderborn>
 #     Signal and System Theory Group, Univ. of Paderborn, https://sst-group.org/
-#     https://github.com/SSTGroup/RobustSubgroupIdentification
+#     https://github.com/SSTGroup/relationship_structure_identification
 #
 #     Permission is hereby granted, free of charge, to any person
 #     obtaining a copy of this software and associated documentation
@@ -46,7 +46,7 @@ import time
 from independent_vector_analysis.consistent_iva import consistent_iva
 from independent_vector_analysis.data_generation import _create_covariance_matrix
 
-from robust_subgroup_identification.subgroup_identification import detect_number_blocks_using_bootstrap, \
+from relationship_structure_identification.grouping_identification import detect_number_blocks_using_bootstrap, \
     detect_number_blocks_using_gershgorin, detect_number_blocks_using_direct_eigval, cluster_datasets
 
 

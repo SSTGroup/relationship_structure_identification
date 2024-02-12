@@ -1,6 +1,6 @@
-#     Copyright (c) <2023> <University of Paderborn>
+#     Copyright (c) <2024> <University of Paderborn>
 #     Signal and System Theory Group, Univ. of Paderborn, https://sst-group.org/
-#     https://github.com/SSTGroup/RobustSubgroupIdentification
+#     https://github.com/SSTGroup/relationship_structure_identification
 #
 #     Permission is hereby granted, free of charge, to any person
 #     obtaining a copy of this software and associated documentation

@@ -1,9 +1,9 @@
-# Simulations for Robust Subgroup Identification Using Independent Vector Analysis
+# Simulations to identify the relationship structure among multiple datasets using Independent Vector Analysis
 
 This package contains the code for reproducing the simulations of our paper:
 
 Isabell Lehmann, Tanuj Hasija, Ben Gabrielson, M. A. B. S. Akhonda, Vince D. Calhoun, Tülay Adali,
-**Robust Subgroup Identification Using Independent Vector Analysis: Application to Multi-task fMRI Data**, *submitted in 2023*
+**Identifying the Relationship Structure among Multiple Datasets Using Independent Vector Analysis: Application to Multi-task fMRI Data**, *submitted in 2023*
 
 
 ## Installing this Package
@@ -11,8 +11,8 @@ Isabell Lehmann, Tanuj Hasija, Ben Gabrielson, M. A. B. S. Akhonda, Vince D. Cal
 The only pre-requisite is to have **Python 3** (version >=3.11) installed. This package can be
 installed (optionally in a virtual environment) with:
 
-    git clone https://github.com/SSTGroup/robust_subgroup_identification
-    cd robust_subgroup_identification
+    git clone https://github.com/SSTGroup/relationship_structure_identification
+    cd relationship_structure_identification
     pip install -e .
 
 Required third-party packages will automatically be installed.
@@ -22,13 +22,13 @@ Required third-party packages will automatically be installed.
 
 The simulated data is generated with:
 
-    cd robust_subgroup_identification
+    cd relationship_structure_identification
     python simulations.py @../simulations/simulation_parameters.txt
 
-After running the code, the folder *robust_subgroup_identification/simulations* will contain the generated .npy files,
+After running the code, the folder *relationship_structure_identification/simulations* will contain the generated .npy files,
 consisting of the true data and the estimated results for IVA-L-SOS, the bootstrap and the clustering, for each Monte-Carlo run.
 
-Then, the performance metrics are calcuted with (from the robust_subgroup_identification folder):
+Then, the performance metrics are calcuted with (from the relationship_structure_identification folder):
 
     python performance_metrics.py @../simulations/performance_parameters.txt
 
@@ -60,16 +60,16 @@ or open an issue here on Github.
 
 If you use this code in an academic paper, please cite [1]
 
-    @article{Lehmann2023,
-      title   = {Robust Subgroup Identification Using Independent Vector Analysis: Application to Multi-task fMRI Data},
+    @article{Lehmann2024,
+      title   = {Identifying the Relationship Structure among Multiple Datasets Using Independent Vector Analysis: Application to Multi-task fMRI Data},
       author  = {Lehmann, Isabell and Hasija, Tanuj and Gabrielson, Ben and Akhonda, M. A. B. S. and Calhoun, Vince D. and Adali, T{\"u}lay},
       booktitle={tba},
       pages={tba},
-      year={2023}
+      year={2024}
       } 
 
 [1] Isabell Lehmann, Tanuj Hasija, et al.,
-**Robust Subgroup Identification Using Independent Vector Analysis: Application to Multi-task fMRI Data**,
+**Identifying the Relationship Structure among Multiple Datasets Using Independent Vector Analysis: Application to Multi-task fMRI Data**,
 *submitted in 2023*.
 
 

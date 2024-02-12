@@ -1,6 +1,6 @@
-#     Copyright (c) <2023> <University of Paderborn>
+#     Copyright (c) <2024> <University of Paderborn>
 #     Signal and System Theory Group, Univ. of Paderborn, https://sst-group.org/
-#     https://github.com/SSTGroup/RobustSubgroupIdentification
+#     https://github.com/SSTGroup/relationship_structure_identification
 #
 #     Permission is hereby granted, free of charge, to any person
 #     obtaining a copy of this software and associated documentation
@@ -121,7 +121,7 @@ def detect_number_blocks_using_gershgorin(sources):
     for i in range(C.shape[1]):
         radius[i] = np.sum(np.abs(C[i, :])) - np.abs(C[i, i])
 
-    # if all elements in radius are 0 --> diagonal matrix. Then set Rmin to infinity because no subgroup is there
+    # if all elements in radius are 0 --> diagonal matrix. Then set Rmin to infinity because no grouping is there
     if np.linalg.norm(radius) == 0:
         Rmin = np.inf
     else:
@@ -130,13 +130,13 @@ def detect_number_blocks_using_gershgorin(sources):
 
     eig_val, _ = np.linalg.eigh(C)
 
-    # number of subgroups
-    n_subgroups = 0
+    # number of groupings
+    n_groupings = 0
     for lambda_i in eig_val:
         if lambda_i > Rmin + 1 + 1e-10:  # correction for machine error
-            n_subgroups += 1
+            n_groupings += 1
 
-    return n_subgroups
+    return n_groupings
 
 
 def cluster_datasets(sources, n_clusters, B, P_fa, labels=None, plot=True):

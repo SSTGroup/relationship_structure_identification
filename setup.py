@@ -1,6 +1,6 @@
-#     Copyright (c) <2023> <University of Paderborn>
+#     Copyright (c) <2024> <University of Paderborn>
 #     Signal and System Theory Group, Univ. of Paderborn, https://sst-group.org/
-#     https://github.com/SSTGroup/RobustSubgroupIdentification
+#     https://github.com/SSTGroup/relationship_structure_identification
 #
 #     Permission is hereby granted, free of charge, to any person
 #     obtaining a copy of this software and associated documentation
@@ -46,9 +46,9 @@ def readme():
         return f.read()
 
 
-setup(name='robust_subgroup_identification',
+setup(name='relationship_structure_identification',
       version='0.0.1',
-      description='Implementation of our method for Robust Subgroup Identification',
+      description='Implementation of our method for identifying the relationship structure among multiple datasets',
       long_description=readme(),
       long_description_content_type='text/markdown',
       classifiers=[
@@ -57,11 +57,11 @@ setup(name='robust_subgroup_identification',
           'Operating System :: OS Independent',
       ],
       keywords='independent vector analysis,',
-      url='https://github.com/SSTGroup/robust_subgroup_identification',
+      url='https://github.com/SSTGroup/relationship_structure_identification',
       author='Isabell Lehmann',
       author_email='isabell.lehmann@sst.upb.de',
       license='LICENSE',
-      packages=['robust_subgroup_identification'],
+      packages=['relationship_structure_identification'],
       python_requires='>=3.10',
       install_requires=[
           'numpy',
