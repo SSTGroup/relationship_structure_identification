@@ -3,7 +3,7 @@
 This package contains the code for reproducing the simulations of our paper:
 
 Isabell Lehmann, Tanuj Hasija, Ben Gabrielson, M. A. B. S. Akhonda, Vince D. Calhoun, Tülay Adali,
-**Identifying the Relationship Structure among Multiple Datasets Using Independent Vector Analysis: Application to Multi-task fMRI Data**, *submitted in 2023*
+**Identifying the Relationship Structure among Multiple Datasets Using Independent Vector Analysis: Application to Multi-task fMRI Data**, *submitted in 2024*
 
 
 ## Installing this Package
