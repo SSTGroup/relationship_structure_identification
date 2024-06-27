@@ -70,7 +70,7 @@ If you use this code in an academic paper, please cite [1]
 
 [1] Isabell Lehmann, Tanuj Hasija, et al.,
 **Identifying the Relationship Structure among Multiple Datasets Using Independent Vector Analysis: Application to Multi-task fMRI Data**,
-*submitted in 2023*.
+*submitted in 2024*.
 
 
 
