@@ -3,7 +3,7 @@
 This package contains the code for reproducing the simulations of our paper:
 
 Isabell Lehmann, Tanuj Hasija, Ben Gabrielson, M. A. B. S. Akhonda, Vince D. Calhoun, Tülay Adali,
-**Identifying the Relationship Structure among Multiple Datasets Using Independent Vector Analysis: Application to Multi-task fMRI Data**, *submitted in 2024*
+**Identifying the Relationship Structure among Multiple Datasets Using Independent Vector Analysis: Application to Multi-task fMRI Data**, in IEEE Access, vol. 12, pp. 109443-109456, 2024.
 
 
 ## Installing this Package
@@ -60,17 +60,19 @@ or open an issue here on Github.
 
 If you use this code in an academic paper, please cite [1]
 
-    @article{Lehmann2024,
-      title   = {Identifying the Relationship Structure among Multiple Datasets Using Independent Vector Analysis: Application to Multi-task fMRI Data},
-      author  = {Lehmann, Isabell and Hasija, Tanuj and Gabrielson, Ben and Akhonda, M. A. B. S. and Calhoun, Vince D. and Adali, T{\"u}lay},
-      booktitle={tba},
-      pages={tba},
-      year={2024}
-      } 
+    @ARTICLE{Lehmann2024,
+      author={Lehmann, Isabell and Hasija, Tanuj and Gabrielson, Ben and Akhonda, Mohammad A. B. S. and Calhoun, Vince D. and Adali, Tülay},
+      journal={IEEE Access}, 
+      title={Identifying the Relationship Structure Among Multiple Datasets Using Independent Vector Analysis: Application to Multi-Task fMRI Data}, 
+      year={2024},
+      volume={12},
+      pages={109443-109456}
+      }
+
 
 [1] Isabell Lehmann, Tanuj Hasija, et al.,
 **Identifying the Relationship Structure among Multiple Datasets Using Independent Vector Analysis: Application to Multi-task fMRI Data**,
-*submitted in 2024*.
+in IEEE Access, vol. 12, pp. 109443-109456, 2024,.
 
 
 
